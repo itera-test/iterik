@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Кошелек </title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <div class="header__top">
+               <a href="#" class="header__logo">
+                  <img src="img/header__icon/logo1.png" alt="">
+                  <img src="img/header__icon/logo2.png" alt="">
+               </a>
+               <div class="header__burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+               <div class="header__exchange">
+
+               </div>
+               <div class="header__icons">
+                  <div class="header__chat">
+                     <img src="img/header__icon/chat.png" alt="">
+                     <div class="header__chat_card">Новых сообщений нет</div>
+                  </div>
+                  <div class="header__bell">
+                     <img src="img/header__icon/bell.png" alt="">
+                     <div class="header__bell_card">Новых уведомлений нет</div>
+                  </div>
+               </div>
+               <div class="header__user">
+                  <div class="header__username">Test Test</div>
+                  <div class="header__avatar">
+                     <img src="img/header__icon/bitcoin.png" alt="">
+                  </div>
+               </div>
+               <div class="header__langs">
+                  <div class="header__flag">
+                     <img src="img/header__icon/russia.png" alt="">
+                  </div>
+                  <div class="header__lang">RU</div>
+               </div>
+            </div>
+            <div class="header__menu menu">
+               <nav class="menu__body">
+                  <ul class="menu__list">
+                     <li class="menu__item">
+                        <a href="index.html" class="menu__link">домашняя страница</a>
+                     </li>
+                     <li class="menu__item">
+                        <a href="sts.html" class="menu__link">sts-profit</a>
+                     </li>
+                     <li class="menu__item">
+                        <a href="partnership.html" class="menu__link">структура</a>
+                     </li>
+                     <li class="menu__item">
+                        <a href="" class="menu__link">календарь</a>
+                     </li>
+                     <li class="menu__item">
+                        <a href="" class="menu__link">бизнес-информация</a>
+                     </li>
+                     <li class="menu__item">
+                        <a href="wallet.html" class="menu__link">кошелек</a>
+                     </li>
+                     <li class="menu__item">
+                        <a href="" class="menu__link">обратная связь</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </header>
+      <main class="page">
+         <section class="wallet">
+            <div class="wallet__body">
+               <div class="wallet__top top-wallet">
+                  <div class="top-wallet__subscription subscription">
+                     <div class="subscription__row">
+                        <div class="subscription__icon">
+                           <img src="img/sts/icon-wallet.png" alt="">
+                        </div>
+                        <div class="subscription__title _title-wallet">Активация подписки</div>
+                        <div class="subscription__text">Один STSPROFIT работает со счётом от 500-1000$</div>
+                        <div class="subscription__btns">
+                           <a href="#popup-subscription" class="subscription__btn btn btn--blue popup-link"
+                              href=""><span>Активировать</span></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="top-wallet__stories">
+                     <div class="top-wallet__row">
+                        <div class="top-wallet__item">
+                           <div class="top-wallet__head">
+                              <div class="top-wallet__balance">0.0000000</div>
+                              <div class="top-wallet__bar bar-top-wallet" id="myBtnContainer">
+                                 <div class="bar-top-wallet__item active"><span>пополнить</span> </div>
+                                 <div class="bar-top-wallet__item"><span>перевести</span></div>
+                                 <div class="bar-top-wallet__item"><span>вывести</span></div>
+                              </div>
+                           </div>
+                           <div class="top-wallet__body">
+                              <div class="top-wallet__transactions">История транзакций: (0)</div>
+                              <div class="top-wallet__types">
+                                 <div class="top-wallet__type">
+                                    <div class="top-wallet__label">Тип:</div>
+                                    <select class="top-wallet__select" name="" id="">
+                                       <option class="top-wallet__option" value="">Все</option>
+                                    </select>
+                                 </div>
+                                 <div class="top-wallet__date">
+                                    <div class="top-wallet__label">Дата:</div>
+                                    <input type="date" name="" id="">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="top-wallet__table">
+                              <p>Нет транзакций</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="top-wallet__replenishment replenishment">
+                     <div class="replenishment__row">
+                        <div class="replenishment__icon">
+                           <img src="img/wallet/wallet.png" alt="">
+                        </div>
+                        <div class="replenishment__content">
+                           <h3 class="replenishment__title _title-wallet">Пополнение кошелька</h3>
+                           <div class="replenishment__label">
+                              <div class="replenishment__name _name-wallet">Укажите сумму:</div>
+                              <input type="text" class="replenishment__input" placeholder="100">
+                           </div>
+                           <div class="replenishment__text text-replenishment">
+                              <div class="text-replenishment__title">Криптовалюта</div>
+                              <div class="text-replenishment__text">Современный и быстрый способ оплаты. Мы принимаем
+                                 USDT TRC20 и USDT BIB20. Реквизиты сформируем после выбора криптовалюты.</div>
+                           </div>
+                           <div class="replenishment__types">
+                              <div class="replenishment__type _name-wallet">Выберите криптовалюту:</div>
+                              <select name="" id="" class="replenishment__select">
+                                 <option value="">usdt-trc-20</option>
+                              </select>
+                           </div>
+                           <div class="replenishment__btns">
+                              <a href="#popup" class="replenishment__button btn popup-link"><span>подать заявку</span>
+                              </a>
+                              <a class="replenishment__btn btn btn--blue "><span>видеоинструкция</span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="wallet__bottom bottom-wallet">
+                  <div class="bottom-wallet__transfer">
+                     <div class="bottom-wallet__row">
+                        <h3 class="bottom-wallet__title _title-wallet">Внутренний перевод</h3>
+                        <div class="bottom-wallet__body">
+                           <div class="bottom-wallet__column">
+                              <div class="bottom-wallet__item">
+                                 <div class="bottom-wallet__name _name-wallet">Укажите сумму:</div>
+                                 <input placeholder="0,00" type="text" class="bottom-wallet__input _input-wallet">
+                              </div>
+                              <div class="bottom-wallet__item">
+                                 <div class="bottom-wallet__name _name-wallet">Введите ID пользователя или логин:</div>
+                                 <input placeholder="01" type="text"
+                                    class="bottom-wallet__input _input-wallet _input-wallet-long">
+                              </div>
+                           </div>
+                           <div class="bottom-wallet__column">
+                              <div class="bottom-wallet__item">
+                                 <div class="bottom-wallet__name _name-wallet">Доступные средства:</div>
+                                 <input placeholder="0,00" type="text" class="bottom-wallet__input _input-wallet">
+                              </div>
+                              <div class="bottom-wallet__item">
+                                 <div class="bottom-wallet__name _name-wallet">Введите секретны код:</div>
+                                 <input placeholder="4326256" type="text"
+                                    class="bottom-wallet__input _input-wallet _input-wallet-long">
+                              </div>
+                           </div>
+                        </div>
+
+                        <label class="_label-wallet">
+                           <input class="_checkbox-wallet" type="checkbox">
+                           <span class="_fake-wallet"></span>
+                           <span class="_wallet-chectext">Я внимательно проверил ID пользователя перед переводом
+                              средств</span>
+                        </label>
+                        <div class="bottom-wallet__btns">
+                           <a class="bottom-wallet__btn btn btn--blue" href=""><span>перевести</span></a>
+                        </div>
+
+                     </div>
+                  </div>
+                  <div class="bottom-wallet__withdrawal">
+                     <div class="bottom-wallet__row">
+                        <div class="bottom-wallet__head">
+                           <h3 class="bottom-wallet__subtitle _title-wallet">Вывод стредств</h3>
+                           <div class="bottom-wallet__selec"><select name="" id="" class="bottom-wallet__select">
+                                 <option value="">USDT - TRC20</option>
+                              </select></div>
+                        </div>
+                        <div class="bottom-wallet__columns">
+                           <div class="bottom-wallet__table">
+                              <div class="bottom-wallet__named _name-wallet">Общий баланс</div>
+                              <div class="bottom-wallet__balance _name-wallet">0.00</div>
+                           </div>
+                           <div class="bottom-wallet__table">
+                              <div class="bottom-wallet__named _name-wallet">Заблок</div>
+                              <div class="bottom-wallet__balance _name-wallet">0.00</div>
+                           </div>
+                           <div class="bottom-wallet__table">
+                              <div class="bottom-wallet__named _name-wallet">Доступные средства</div>
+                              <div class="bottom-wallet__balance _name-wallet">0.00</div>
+                           </div>
+                        </div>
+                        <div class="bottom-wallet__body body-bottom-wallet">
+                           <div class="body-bottom-wallet__column">
+                              <div class="bottom-wallet__item">
+                                 <div class="bottom-wallet__name _name-wallet">Адрес кошелька:</div>
+                                 <input placeholder="01" type="text"
+                                    class="bottom-wallet__input _input-wallet _input-wallet-long">
+                              </div>
+                              <div class="bottom-wallet__item">
+                                 <div class="bottom-wallet__name _name-wallet">Укажите сумму:</div>
+                                 <input placeholder="01" type="text" class="bottom-wallet__input _input-wallet ">
+                              </div>
+                              <div class="bottom-wallet__item">
+                                 <div class="bottom-wallet__name _name-wallet">Введите секретный код:</div>
+                                 <input placeholder="01" type="text"
+                                    class="bottom-wallet__input _input-wallet _input-wallet-long">
+                              </div>
+                           </div>
+                           <div class="body-bottom-wallet__column">
+                              <p class="body-bottom-wallet__text">Внимание!</p>
+                              <p class="body-bottom-wallet__text">Для вывода используйте USDT адрес только стандарта
+                                 TRC20, иначе средства могут быть безвозвратно утеряны.</p>
+                              <h4 class="body-bottom-wallet__title">Заявка обрабатывается в течение 24 часов</h4>
+                           </div>
+                        </div>
+                        <div class="bottom-wallet__bottom">
+                           <div class="bottom-wallet__columns">
+                              <div class="bottom-wallet__table">
+                                 <div class="bottom-wallet__named _name-wallet">Комиссия</div>
+                                 <div class="bottom-wallet__balance _name-wallet">0.00</div>
+                              </div>
+                              <div class="bottom-wallet__table">
+                                 <div class="bottom-wallet__named _name-wallet">Вы получите</div>
+                                 <div class="bottom-wallet__balance _name-wallet">0.00</div>
+                              </div>
+                           </div>
+                           <div class="bottom-wallet__btns">
+                              <a class="bottom-wallet__btn btn btn--blue" href=""><span>подать заявку</span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+            <div class="wallet__story story-wallet">
+               <div class="story-wallet__row">
+                  <div class="story-wallet__head">
+                     <h3 class="story-wallet__title _title-wallet">История транзакций</h3>
+                  </div>
+                  <div class="story-wallet__bar bar-top-wallet" id="myBtnContainer">
+                     <div class="bar-top-wallet__item"><span>пополнения</span> </div>
+                     <div class="bar-top-wallet__item"><span>выплаты</span></div>
+                     <div class="bar-top-wallet__item"><span>переводы</span></div>
+                     <div class="bar-top-wallet__item active"><span>начисления</span> </div>
+                  </div>
+                  <div class="story-wallet__body">
+                     <table class="story-wallet__table">
+                        <tr class="story-wallet__item">
+                           <th>ID</th>
+                           <th>Дата</th>
+                           <th>Сумма</th>
+                           <th>Счет</th>
+                           <th>Система</th>
+                           <th>Статус</th>
+                           <th>Тип</th>
+                        </tr>
+                        <tr class="story-wallet__name">
+                           <td>ID01</td>
+                           <td>01.01.2020</td>
+                           <td>+00000 ITB</td>
+                           <td>Начислено от партнера</td>
+                           <td>-</td>
+                           <td>Выполнено</td>
+                           <td>Начисление матчинг бонуса</td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__body">
+               <div class="footer__copy">&copy;Copyright 2022 Itera Crypto Club All Right Reserved</div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <div id="popup" class="popup">
+      <div class="popup__body">
+         <div class="popup__content">
+            <div class="popup__bigcolumn">
+               <a href="#" class="popup__close close-popup">X</a>
+               <div class="popup__id">Ваша заявка № 0</div>
+               <div class="popup__balance">100.000 <span>USDT</span></div>
+               <div class="popup__label _name-wallet">Отправьте USDT на адрес</div>
+               <input type="text" class="popup__input">
+               <div class="popup__text">
+                  <p>Используйте только сеть TRC20. Использование другой сети приведет к потере средств!</p>
+                  <p>
+                     Обязательно учтите комиссию сети. Сумма должна совпадать с суммой в заявке.
+                     Иначе заявка не будет завершена и сумма вернется на счет отправителя с вычетом
+                     комиссии за транзакцию.
+                  </p>
+               </div>
+               <a href="" class="popup__button">я оплатил</a>
+            </div>
+            <div class="popup__smallcolumn">
+               <div class="popup__text">Отсканируйте код на странице выхода
+                  в приложении торговой платфформы для
+                  кошелька</div>
+               <div class="popup__qr">
+                  <img src="img/wallet/3.png" alt="">
+               </div>
+               <div class="popup__info">
+                  <div class="popup__circle"></div>
+                  <div class="popup__info-text">Отправляйте на этот адрес только USDT</div>
+               </div>
+               <div class="popup__info">
+                  <div class="popup__circle"></div>
+                  <div class="popup__info-text">
+                     Убедитесь, что сеть верна: Tron (TRC20)</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="popup-subscription" class="popup">
+      <div class="popup__body">
+         <div class="popup__content popup-subscription">
+            <div class="popup-subscription__row">
+               <div class="popup-subscription__title _title-wallet">Активировать подписку</div>
+               <div class="popup-subscription__balance">Ваш баланс: <span>1000$</span></div>
+               <div class="popup-subscription__active">Активных роботов: <span>0</span></div>
+               <div class="popup-subscription__roboto">
+                  <div class="popup-subscription__name"> Вы можете активировать 1 робот</div>
+                  <div class="popup-subscription__value">Стоимость подписки на год: <span>50$</span></div>
+               </div>
+               <div class="popup-subscription__btns">
+                  <a class="popup-subscription__btn btn close-popup" href=""><span>отменить</span></a>
+                  <a href="#popup-subscription_validation" class="popup-subscription__btn btn btn--blue popup-link"
+                     href=""><span>Активировать</span></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="popup-subscription_validation" class="popup">
+      <div class="popup__body">
+         <div class="popup__content popup-sts">
+            <div class="popup-sts__row">
+               <div class="popup-sts__title _title-wallet">Вы уверены, что хотите активировать?</div>
+               <div class="popup-sts__btns">
+                  <a class="popup-sts__btn btn close-popup" href=""><span>отменить</span></a>
+                  <a href="#" class="popup-sts__btn btn btn--blue" href=""><span>ДА</span></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="js/start.js"></script>
+   <script src="js/main.js"></script>
+   <script src="js/popups.js"></script>
+</body>
+
+</html>
